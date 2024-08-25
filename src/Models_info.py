@@ -433,7 +433,7 @@ class Models_Info:
             st.subheader(" Detailed Information on Error Metrics of all individual Machine Learning algorithms ")
             st.dataframe(df_errors)
             st.subheader("")
-            st.subheader("MAE : Mean Absolute Error, MSE : Mean Squared Error, RMSE : Root Mean Squared Error")
+            st.subheader("MAE : Mean Absolute Error, MSE : Mean Squared Error, RMSE : Root Mean Squared Error, SVR: Support Vector Regressor, SGD : Stochastic Gradient Descent ")
             logging.info(f"function : \'{inspect.currentframe().f_code.co_name}\' from  class : \'{self.__class__.__name__} \', Ended")
 
 
