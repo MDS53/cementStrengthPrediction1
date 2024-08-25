@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pickle
+import pandas as pd
 from Data_Analysis import Visualizations
 from Data_Ingestion import Data
 from ML_Prediction_Pipeline import Prediction
