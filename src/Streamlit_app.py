@@ -87,7 +87,7 @@ if st.session_state.current_page == "home":
     st.markdown("<p style='text-align: center; font-size: 20px;'>This is the home page of the Cement Strength Prediction app. Use the navigation bar to explore different features.</p>", unsafe_allow_html=True)
 elif st.session_state.current_page == "data_analysis":
     #st.write("You clicked Data Analysis!")
-    l = Visualizations(X_train, Y_train, df)
+    l = Visualizations(X_train, y_train, df)
 elif st.session_state.current_page == "prediction":
     #st.write("You clicked Prediction")
     P.get_inputs()
