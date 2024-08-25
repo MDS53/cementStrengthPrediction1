@@ -1,0 +1,1468 @@
+2024-08-25 21:35:12,561 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:35:12,562 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:35:12,772 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:12,807 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:12,807 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:12,825 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:12,868 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:12,888 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:12,889 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:12,907 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:14,590 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:14,611 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:14,611 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:14,631 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:14,633 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:35:14,655 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:35:14,664 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:35:14,664 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:35:14,664 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:35:14,670 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:35:14,670 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:35:14,674 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:35:14,675 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:35:14,676 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:35:14,829 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:35:16,745 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:16,786 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:16,786 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:16,823 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:17,457 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:17,498 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:17,498 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:17,538 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:17,545 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:35:17,569 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:35:17,570 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:35:17,570 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:35:17,570 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:35:17,580 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:35:17,580 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:35:17,590 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:35:17,593 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:35:17,595 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:35:17,921 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:35:19,110 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:19,149 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:19,150 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:19,185 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:39,395 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:39,434 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:39,434 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:39,466 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:40,736 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:35:40,774 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:35:40,774 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:35:40,805 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:35:40,810 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:35:40,832 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:35:40,833 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:35:40,833 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:35:40,833 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:35:40,844 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:35:40,844 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:35:40,855 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:35:40,857 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:35:40,858 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:35:41,145 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:36:15,498 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:36:15,498 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:36:15,499 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:15,519 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:15,519 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:15,538 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:15,540 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:15,561 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:15,561 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:15,583 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:15,587 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:36:15,596 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:36:15,596 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 148, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:36:15,597 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:36:15,597 ERROR Exception : PolynomialTransformation() takes no arguments at function : 'multicol_check' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:36:15,597 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 286, in multicol_check
+    self.k = PolynomialTransformation(self.df)
+TypeError: PolynomialTransformation() takes no arguments
+
+2024-08-25 21:36:20,778 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:36:20,779 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:36:20,779 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:20,799 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:20,799 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:20,817 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:20,818 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:20,839 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:20,839 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:20,858 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:20,861 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:36:20,870 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:36:20,871 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:36:20,871 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:36:20,871 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:36:20,876 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:36:20,876 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:36:20,882 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:36:20,882 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:36:20,883 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:36:21,024 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:36:43,971 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:43,993 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:43,993 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:44,013 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:45,943 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:45,965 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:45,965 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:45,984 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:47,233 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:47,272 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:47,272 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:47,294 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:48,624 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:48,661 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:48,661 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:48,690 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:49,621 INFO function : 'get_details_visuals' from  class : 'Models_Info ', Ended
+2024-08-25 21:36:51,433 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:36:51,469 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:36:51,469 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:36:51,501 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:36:51,504 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:36:51,517 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:36:51,517 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:36:51,517 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:36:51,517 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:36:51,522 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:36:51,522 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:36:51,529 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:36:51,533 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:36:51,534 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:36:51,794 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:37:49,627 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:37:49,627 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:37:49,628 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:37:49,648 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:37:49,648 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:37:49,667 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:37:49,669 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:37:49,690 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:37:49,690 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:37:49,713 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:37:49,715 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:37:49,725 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:37:49,725 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 152, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:37:49,725 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:37:49,725 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:37:49,730 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:37:49,730 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:37:49,735 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:37:49,736 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:37:49,737 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:37:49,885 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:37:56,209 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:37:56,209 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:37:56,210 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:37:56,230 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:37:56,230 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:37:56,248 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:37:56,250 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:37:56,270 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:37:56,270 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:37:56,288 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:37:56,290 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:37:56,300 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:37:56,300 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 152, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:37:56,300 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:37:56,300 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:37:56,306 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:37:56,306 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:37:56,310 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:37:56,311 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:37:56,312 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:37:56,447 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:00,943 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:00,944 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:00,944 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:00,964 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:00,964 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:00,983 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:00,985 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:01,006 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:01,006 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:01,024 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:01,027 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:01,037 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:01,038 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:01,038 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:01,038 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:01,042 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:01,042 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:01,047 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:01,048 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:01,048 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:01,185 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:03,454 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:03,455 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:03,455 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:03,475 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:03,475 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:03,492 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:03,493 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:03,557 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:03,557 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:03,575 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:03,577 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:03,596 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:03,596 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:03,615 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:03,617 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:03,626 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:03,627 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 152, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:03,627 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:03,627 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:03,632 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:03,632 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:03,636 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:03,638 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:03,638 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:03,772 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:05,316 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:05,317 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:05,317 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:05,337 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:05,337 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:05,355 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:05,358 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:05,378 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:05,378 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:05,396 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:05,398 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:05,408 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:05,409 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 152, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:05,409 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:05,409 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:05,414 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:05,414 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:05,418 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:05,419 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:05,420 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:05,557 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:13,381 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:13,382 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:13,382 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:13,402 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:13,402 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:13,420 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:13,421 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:13,442 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:13,442 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:13,460 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:13,462 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:13,471 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:13,472 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 152, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:13,472 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:13,472 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:13,477 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:13,477 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:13,482 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:13,483 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:13,484 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:13,625 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:15,602 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:15,603 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:15,604 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:15,623 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:15,624 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:15,641 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:15,643 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:15,664 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:15,665 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:15,683 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:15,685 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:15,694 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:15,695 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 153, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:15,695 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:15,695 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:15,700 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:15,700 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:15,704 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:15,705 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:15,706 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:15,845 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:24,323 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:24,324 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:24,324 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:24,345 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:24,345 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:24,363 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:24,365 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:24,391 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:24,391 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:24,410 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:24,412 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:24,422 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:24,423 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 153, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:24,423 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:24,423 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:24,428 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:24,428 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:24,433 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:24,433 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:24,434 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:24,588 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:29,318 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:29,318 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:29,319 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:29,339 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:29,339 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:29,357 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:29,359 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:29,381 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:29,381 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:29,400 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:29,402 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:29,413 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:29,414 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 153, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:29,414 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:29,414 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:29,419 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:29,419 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:29,424 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:29,425 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:29,426 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:29,566 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:31,408 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:31,408 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:31,409 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:31,429 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:31,429 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:31,447 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:31,449 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:31,469 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:31,469 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:31,487 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:31,489 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:31,499 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:31,500 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 153, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:31,500 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:31,500 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:31,505 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:31,505 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:31,512 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:31,512 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:31,513 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:31,655 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:38:55,221 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:55,221 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:55,222 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:55,242 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:55,242 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:55,259 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:55,261 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:55,326 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:55,326 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:55,345 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:55,347 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:38:55,368 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:38:55,368 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:38:55,386 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:38:55,389 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:38:55,399 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:38:55,400 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 153, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:38:55,400 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:38:55,400 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:55,406 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:55,406 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:38:55,411 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:38:55,412 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:38:55,413 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:38:55,551 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:39:23,647 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:39:23,648 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:39:23,648 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:23,667 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:23,667 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:23,685 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:23,686 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:23,756 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:23,756 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:23,775 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:23,777 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:23,798 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:23,798 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:23,816 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:23,818 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:39:23,827 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:39:23,828 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 153, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:39:23,828 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:39:23,828 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:39:23,833 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:39:23,833 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:39:23,838 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:39:23,839 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:39:23,839 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:39:23,978 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:39:26,318 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:39:26,319 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:39:26,319 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:26,340 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:26,340 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:26,359 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:26,360 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:26,425 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:26,425 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:26,444 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:26,446 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:26,467 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:26,467 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:26,485 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:26,486 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:39:26,496 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:39:26,496 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:39:26,496 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:39:26,496 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:39:26,502 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:39:26,502 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:39:26,506 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:39:26,507 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:39:26,508 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:39:26,650 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:39:27,935 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:27,959 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:27,959 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:27,978 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:29,376 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:39:29,397 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:39:29,398 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:39:29,416 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:39:29,418 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:39:29,428 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:39:29,428 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:39:29,428 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:39:29,428 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:39:29,433 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:39:29,433 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:39:29,438 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:39:29,439 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:39:29,439 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:39:29,580 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:40:07,297 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:40:07,298 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:40:07,298 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:40:07,318 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:40:07,319 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:40:07,336 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:40:07,338 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:40:07,359 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:40:07,359 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:40:07,382 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:40:07,384 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:40:07,396 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:40:07,397 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 154, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:40:07,397 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:40:07,397 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:40:07,402 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:40:07,402 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:40:07,407 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:40:07,408 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:40:07,409 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:40:07,561 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:40:20,215 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:40:20,215 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:40:20,216 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:40:20,236 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:40:20,236 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:40:20,254 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:40:20,256 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:40:20,276 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:40:20,276 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:40:20,295 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:40:20,297 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:40:20,307 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:40:20,308 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 154, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:40:20,308 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:40:20,308 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:40:20,313 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:40:20,313 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:40:20,317 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:40:20,318 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:40:20,319 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:40:20,463 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:42:50,426 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:42:50,427 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:42:50,428 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:42:50,450 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:42:50,450 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:42:50,469 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:42:50,471 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:42:50,492 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:42:50,493 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:42:50,511 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:42:50,514 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:42:50,524 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:42:50,525 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:42:50,525 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:42:50,525 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:42:50,530 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:42:50,530 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:42:50,535 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:42:50,536 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:42:50,537 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:42:50,675 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:42:55,107 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:42:55,130 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:42:55,130 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:42:55,150 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:42:56,816 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:42:56,853 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:42:56,853 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:42:56,885 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:42:56,888 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:42:56,903 ERROR Exception : Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly. at function : 'visualize_data' and class : 'Visualizations', at file C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py
+2024-08-25 21:42:56,904 ERROR Traceback (most recent call last):
+  File "C:\Users\new\OneDrive\Desktop\CEMENT_ST_2\src\Data_Analysis.py", line 151, in get_visuals
+    st.altair_chart(kde_plot)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\runtime\metrics_util.py", line 408, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1517, in altair_chart
+    return self._altair_chart(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 1721, in _altair_chart
+    vega_lite_spec = _convert_altair_to_vega_lite_spec(altair_chart)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\streamlit\elements\vega_charts.py", line 373, in _convert_altair_to_vega_lite_spec
+    chart_dict = altair_chart.to_dict()
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 2975, in to_dict
+    return super().to_dict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\api.py", line 961, in to_dict
+    vegalite_spec = super(TopLevelMixin, copy).to_dict(  # type: ignore[misc]
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 960, in to_dict
+    result = _todict(
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in _todict
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 476, in <dictcomp>
+    return {k: _todict(v, context) for k, v in obj.items() if v is not Undefined}
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\utils\schemapi.py", line 472, in _todict
+    return obj.to_dict(validate=False, context=context)
+  File "C:\Users\new\anaconda3\envs\abalone\lib\site-packages\altair\vegalite\v5\schema\channels.py", line 64, in to_dict
+    raise ValueError(
+ValueError: Unable to determine data type for the field "Cement "; verify that the field name is not misspelled. If you are referencing a field from a transform, also confirm that the data type is specified correctly.
+
+2024-08-25 21:42:56,904 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:42:56,904 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:42:56,912 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:42:56,912 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:42:56,916 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:42:56,917 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:42:56,919 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:42:57,130 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:43:25,721 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:43:25,722 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:43:25,723 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:43:25,744 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:43:25,744 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:43:25,763 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:43:25,765 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:43:25,786 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:43:25,786 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:43:25,805 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:43:25,807 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:43:27,998 INFO Function 'visualize_data' from class 'Visualizations', Ended
+2024-08-25 21:43:27,998 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:43:27,998 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:43:28,003 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:43:28,003 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:43:28,008 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:43:28,008 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:43:28,009 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:43:28,151 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:43:45,573 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:43:45,574 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:43:45,574 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:43:45,593 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:43:45,593 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:43:45,611 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:43:45,612 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:43:45,632 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:43:45,632 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:43:45,650 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:43:45,652 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:43:47,838 INFO Function 'visualize_data' from class 'Visualizations', Ended
+2024-08-25 21:43:47,838 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:43:47,838 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:43:47,843 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:43:47,843 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:43:47,848 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:43:47,848 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:43:47,850 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:43:47,998 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:44:01,033 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:44:01,068 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:44:01,068 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:44:01,101 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:44:01,105 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:44:02,495 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:44:02,535 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:44:02,535 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:44:02,570 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:44:03,657 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:44:03,692 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:44:03,692 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:44:03,710 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:44:03,712 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:44:06,975 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:44:07,084 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:44:07,084 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:44:07,136 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:44:07,897 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:44:07,933 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:44:07,933 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:44:07,965 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:44:08,935 INFO function : 'get_details_visuals' from  class : 'Models_Info ', Ended
+2024-08-25 21:44:11,760 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:44:11,796 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:44:11,796 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:44:11,829 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:45:50,843 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:45:50,843 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:45:50,845 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:45:50,865 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:45:50,865 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:45:50,883 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:46:12,385 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:46:12,405 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:46:12,405 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:46:12,424 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:46:37,114 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:46:37,137 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:46:37,137 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:46:37,156 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:46:42,166 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:46:42,203 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:46:42,203 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:46:42,235 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:46:42,238 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:46:46,182 INFO Function 'visualize_data' from class 'Visualizations', Ended
+2024-08-25 21:46:46,182 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:46:46,182 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:46:46,191 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:46:46,191 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:46:46,199 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:46:46,202 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:46:46,203 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:46:46,408 INFO Function 'multicol_check' from class 'Visualizations', Ended
+2024-08-25 21:46:56,089 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:46:56,126 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:46:56,126 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:46:56,158 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:46:57,447 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:46:57,484 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:46:57,484 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:46:57,514 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:46:58,460 INFO function : 'get_details_visuals' from  class : 'Models_Info ', Ended
+2024-08-25 21:47:01,985 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:47:02,020 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:47:02,020 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:47:02,054 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:47:06,552 INFO function : 'get_split_data' from  class : 'Data ', Started
+2024-08-25 21:47:06,588 INFO function : 'get_split_data' from  class : 'Data ', Ended
+2024-08-25 21:47:06,588 INFO function : 'get_whole_data' from  class : 'Data ', Started
+2024-08-25 21:47:06,611 INFO function : 'get_whole_data' from  class : 'Data ', Ended
+2024-08-25 21:47:06,613 INFO Function 'visualize_data' from class 'Visualizations', Started
+2024-08-25 21:47:10,364 INFO Function 'visualize_data' from class 'Visualizations', Ended
+2024-08-25 21:47:10,364 INFO Function 'multicol_check' from class 'Visualizations', Started
+2024-08-25 21:47:10,364 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:47:10,372 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:47:10,372 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', Started
+2024-08-25 21:47:10,380 INFO function : 'polynomial_data' from  class : 'PolynomialTransformation ', ended
+2024-08-25 21:47:10,383 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Started
+2024-08-25 21:47:10,384 INFO function : 'Power_Transform' from  class : 'Pipeline_market ', Ended
+2024-08-25 21:47:10,604 INFO Function 'multicol_check' from class 'Visualizations', Ended
