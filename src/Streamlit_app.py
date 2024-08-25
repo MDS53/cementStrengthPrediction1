@@ -11,9 +11,9 @@ from utils import get_concrete_reasons
 st.set_page_config(page_title="Cement Strength Prediction", page_icon="🧱", layout="wide")
 
 # Load data and prediction modules
-k = Data()
-X_train, X_test, Y_train, Y_test = k.get_split_data()
-df = k.get_whole_data()
+df=pd.read_excel("Concrete_Data.xls")
+X_train,X_test,.y_train,y_test=train_test_split(df.drop(df.columns[-1],axis=1),df[df.columns[-1]])
+
 
 P = Prediction()
 
