@@ -251,7 +251,7 @@ class Models_Info:
                 ).resolve_scale(
                     color='independent'
                 ).properties(
-                    title='Metrics : RMSE (Train vs Test) ',
+                    title='Metrics : MAE (Train vs Test) ',
                     width=600,
                     height=600
                 )
@@ -269,7 +269,7 @@ class Models_Info:
                     y=alt.Y('Polynomial_Train_mse'),
                     tooltip=['Algorithmn', 'Polynomial_Train_mse']
                 ).properties(
-                    title='Metrics : RMSE (Train vs Test)',
+                    title='Metrics : MSE (Train vs Test)',
                     width=600,
                     height=600
                 )
