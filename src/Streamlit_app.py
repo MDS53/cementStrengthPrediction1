@@ -13,6 +13,7 @@ st.set_page_config(page_title="Cement Strength Prediction", page_icon="🧱", la
 
 # Load data and prediction modules
 df=pd.read_excel("Concrete_Data.xls")
+st.dataframe(df)
 X_train,X_test,y_train,y_test=train_test_split(df.drop(df.columns[-1],axis=1),df[df.columns[-1]])
 
 
