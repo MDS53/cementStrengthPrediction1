@@ -7,6 +7,7 @@ from Data_Ingestion import Data
 from ML_Prediction_Pipeline import Prediction
 from Models_info import Models_Info
 from utils import get_concrete_reasons
+from sklearn.model_selection import train_test_split
 
 # Set page configuration
 st.set_page_config(page_title="Cement Strength Prediction", page_icon="🧱", layout="wide")
