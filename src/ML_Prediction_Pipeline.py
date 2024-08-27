@@ -41,4 +41,4 @@ class Prediction:
         self.pipe1 = pickle.load(open('pipe1.pkl', 'rb'))
         prediction = self.pipe1.predict(test_data)[0]
         st.write(f"Entered Data: {test_data}")
-        st.markdown(f"<h1 style='text-align: center; font-size: 50px;'>Predicted Cement Strength: {np.round(prediction,3)}MPa </h1>", unsafe_allow_html=True)
+        st.markdown(f"<h1 style='text-align: center; font-size: 50px;'>Predicted Concrete Compressive Strength: {np.round(prediction,3)}MPa </h1>", unsafe_allow_html=True)
