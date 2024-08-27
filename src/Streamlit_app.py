@@ -10,7 +10,7 @@ from utils import get_concrete_reasons
 from sklearn.model_selection import train_test_split
 
 # Set page configuration
-st.set_page_config(page_title="Cement Strength Prediction", page_icon="🧱", layout="wide")
+st.set_page_config(page_title="Concrete compressive Strength Prediction", page_icon="🧱", layout="wide")
 
 # Load data and prediction modules
 df=pd.read_excel("Concrete_Data.xls")
@@ -84,7 +84,7 @@ if st.sidebar.button("Tips for better strength"):
 if st.session_state.current_page == "home":
     st.text("")
     #st.write("This is the home page of the Cement Strength Prediction app. Use the navigation bar to explore different features.")
-    st.markdown("<p style='text-align: center; font-size: 20px;'>This is the home page of the Cement Strength Prediction app. Use the navigation bar to explore different features.</p>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-size: 20px;'>This is the home page of the Concrete compressive Strength Prediction app. Use the navigation bar to explore different features.</p>", unsafe_allow_html=True)
 elif st.session_state.current_page == "data_analysis":
     #st.write("You clicked Data Analysis!")
     l = Visualizations(X_train, y_train, df)
