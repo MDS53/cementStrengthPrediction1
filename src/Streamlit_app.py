@@ -59,7 +59,7 @@ st.markdown(
 )
 
 # Set the title of the app
-st.markdown("<h1 style='text-align: center; font-size: 50px;'>Welcome to Cement Strength Prediction</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; font-size: 50px;'>Welcome to Concrete Compressive Strength Prediction</h1>", unsafe_allow_html=True)
 
 # Initialize session state for navigation buttons if not already set
 if "current_page" not in st.session_state:
